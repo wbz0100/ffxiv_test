@@ -29,7 +29,7 @@ function reportLogs () {
      posCalc(logX, logY, logZ)
      currHPPer = maxHP/currHp * 100
 
-     Logger.log(`[${date}] Add: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
+     Consle.log(`[${date}] Add: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
     }
     break
     case "04" : {
@@ -46,7 +46,7 @@ function reportLogs () {
      posCalc(logX, logY, logZ)
      currHPPer = maxHP/currHp * 100
 
-     Logger.log(`[${date}] Remove: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
+     Consle.log(`[${date}] Remove: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
     }
 
     break
@@ -73,7 +73,7 @@ function reportLogs () {
 
       posCalc(logX, logY, logZ)
 
-      Logger.log(`[${date}] 현재 서버:${currWorldId} 닉네임@서버: ${name}@${myWorldId} (ID: ${charId}) (X:${posX}, Y:${posY}. Z:${posZ})`)
+      Consle.log(`[${date}] 현재 서버:${currWorldId} 닉네임@서버: ${name}@${myWorldId} (ID: ${charId}) (X:${posX}, Y:${posY}. Z:${posZ})`)
     }
     break
     default : "Error"
@@ -117,7 +117,7 @@ function krWorldName(ids) {
   }
 }
 
-function eoWheather(Date) {
+function eoWheather(Date , ) {
 
   var unixSeconds = parseInt(Date.getTime() / 1000)
   var bell = unixSeconds / 175
