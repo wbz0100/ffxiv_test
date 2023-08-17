@@ -2,12 +2,32 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { /* IE10+ CSS */ }
 * {
   font-family: Pretendard, sans-serif;
+  max-width: 100px;
+}
+body {
+  -ms-overflow-style: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar {
+ display: none;
 }
 
 .title {
-  font-size: 20px;
+  font-size: 16px;
 }
 .version_info {
   display: flex;
   font-size: 12px;
 }
+.version_info > div {
+  margin:  0 2px 0 2px;
+}
+.version_info > div:first-child {
+  margin-left: 0px !important;
+}
+
+.version_info > div:last-child {
+  margin-right: 0px !important;
+}
+
