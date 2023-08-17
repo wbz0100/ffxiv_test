@@ -1,0 +1,100 @@
+FFXIVData = {
+
+  const languages = ['ko', 'en', 'ja', 'fr', 'de', 'cn']
+  const langName = {
+    ko: {
+      ko: '한국어',
+      en: '영어',
+      ja: '일본어',
+      fr: '프랑스어',
+      de: '불어',
+      cn: '중국어'
+    },
+    'en': {
+      ko: 'Korean',
+      en: 'English',
+      ja: 'Japanese',
+      fr: 'French',
+      de: 'German',
+      cn: 'Chinese'
+    },
+    ja: {
+      ko: '韓国語',
+      en: '英語',
+      ja: '日本語',
+      fr: 'フランス語',
+      de: 'ドイツ語',
+      cn: '中国語'
+    },
+    fr: {
+      ko: 'Coréen',
+      en: 'Anglais',
+      ja: 'Japonais',
+      fr: 'Français',
+      de: 'Allemand',
+      cn: 'Chinois'
+    },
+    de: {
+      ko: 'Koreanisch',
+      en: 'Englisch',
+      ja: 'Japanisch',
+      fr: 'Französisch',
+      de: 'Deutsch',
+      cn: 'Chinesisch'
+    },
+    cn: {
+      ko: '韩文',
+      en: '英文',
+      ja: '日文',
+      fr: '法文',
+      de: '德文',
+      cn: '中文'
+    }
+  }
+  
+  const worlds = ['2075', '2076', '2077', '2078', '2080']
+  const worldName = {
+    2075: {
+      Name: 'KrCarbuncle',
+      UserType: '카벙클',
+      DataCenter: 'mana',
+      SheetTab: 'Carbuncle'
+    },
+    2076: {
+      Name: 'KrChocobo',
+      UserType: '초코보',
+      DataCenter: 'mana',
+      SheetTab: 'Chocobo'
+    },
+    2077: {
+      Name: 'KrMoogle',
+      UserType: '모그리',
+      DataCenter: 'mana',
+      SheetTab: 'Moogle'
+    },
+    2078: {
+      Name: 'KrTonberry',
+      UserType: '톤베리',
+      DataCenter: 'mana',
+      SheetTab: 'Tonberry'
+    },
+    2079: {
+      Name: 'KrCaitsith',
+      UserType: '캐트시',
+      DataCenter: 'mana',
+      SheetTab: 'Caitsith'
+    },
+    2080: {
+      Name: 'KrFenrir',
+      UserType: '펜리르',
+      DataCenter: 'mana',
+      SheetTab: 'Fenrir'
+    },
+    2081: {
+      Name: 'KrOmega',
+      UserType: '오메가',
+      DataCenter: 'mana',
+      SheetTab: 'Omega'
+    }
+  }
+}
