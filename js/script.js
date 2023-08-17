@@ -1,5 +1,3 @@
-let log = "03|2023-08-17T04:03:11.2780000+09:00|10135A95|백측|16|52|0000|81C|KrChocobo|0|0|34708|34708|10000|10000|||766.91|-28.69|22.60|-1.57|99a7dbaee76c427a"
-
 addOverlayListener('CombatData', (data) => {
   Logger.log(`Encounter: ${data.title} | ${data.duration} | Total DPS: ${data.ENCDPS}`);
 })
