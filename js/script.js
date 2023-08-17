@@ -1,9 +1,9 @@
 let log = "03|2023-08-17T04:03:11.2780000+09:00|10135A95|백측|16|52|0000|81C|KrChocobo|0|0|34708|34708|10000|10000|||766.91|-28.69|22.60|-1.57|99a7dbaee76c427a"
 
-Consle.log ("success load textjs file.")
+Logger.log ("success load textjs file.")
 
 addOverlayListener('CombatData', (data) => {
-  console.log(`Encounter: ${data.title} | ${data.duration} | Total DPS: ${data.ENCDPS}`);
+  Logger.log(`Encounter: ${data.title} | ${data.duration} | Total DPS: ${data.ENCDPS}`);
 })
 
 function reportLogs () {
@@ -35,7 +35,7 @@ function reportLogs () {
      posCalc(logX, logY, logZ)
      currHPPer = maxHP/currHp * 100
 
-     Consle.log(`[${date}] Add: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
+     Logger.log(`[${date}] Add: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
     }
     break
     case "04" : {
@@ -52,7 +52,7 @@ function reportLogs () {
      posCalc(logX, logY, logZ)
      currHPPer = maxHP/currHp * 100
 
-     Consle.log(`[${date}] Remove: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
+     Logger.log(`[${date}] Remove: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
     }
 
     break
