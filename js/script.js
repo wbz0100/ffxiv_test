@@ -1,5 +1,7 @@
+console.log("hello")
+
 addOverlayListener('CombatData', (data) => {
-  Logger.log(`Encounter: ${data.title} | ${data.duration} | Total DPS: ${data.ENCDPS}`);
+  console.log(`Encounter: ${data.title} | ${data.duration} | Total DPS: ${data.ENCDPS}`);
 })
 
 function reportLogs () {
@@ -31,7 +33,7 @@ function reportLogs () {
      posCalc(logX, logY, logZ)
      currHPPer = maxHP/currHp * 100
 
-     Logger.log(`[${date}] Add: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
+     console.log(`[${date}] Add: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
     }
     break
     case "04" : {
@@ -48,7 +50,7 @@ function reportLogs () {
      posCalc(logX, logY, logZ)
      currHPPer = maxHP/currHp * 100
 
-     Logger.log(`[${date}] Remove: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
+     console.log(`[${date}] Remove: <${name}> (${bnpcId}) ${currHp}/${maxHp} (${currHPPer}%) (X:${posX}, Y:${posY}. Z:${posZ}) `)
     }
 
     break
@@ -75,7 +77,7 @@ function reportLogs () {
 
       posCalc(logX, logY, logZ)
 
-      Consle.log(`[${date}] 현재 서버:${currWorldId} 닉네임@서버: ${name}@${myWorldId} (ID: ${charId}) (X:${posX}, Y:${posY}. Z:${posZ})`)
+      console.log(`[${date}] 현재 서버:${currWorldId} 닉네임@서버: ${name}@${myWorldId} (ID: ${charId}) (X:${posX}, Y:${posY}. Z:${posZ})`)
     }
     break
     default : "Error"
