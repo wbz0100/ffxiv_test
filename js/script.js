@@ -1,4 +1,4 @@
-addOverlayListener('rawLine', loadData);
+addOverlayListener('LogLine', loadData);
 
 function loadData (data) {
   console.log (data);
