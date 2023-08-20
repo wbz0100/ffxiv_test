@@ -1,1 +1,3 @@
-addOverlayListener('LogLine', data); // 등록
+function loadData (data) {
+  console.log (data);
+}
