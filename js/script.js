@@ -28,7 +28,7 @@ function catchLogs(data) {
       const logZ = data.line[19]
       const radius = data.line[20] 
 
-      const currHPPer = maxHP/currHP * 0.1
+      const currHPPer = (maxHP/currHP)
 
       console.log (`${type} : ${name} (${id}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
     }
@@ -45,7 +45,7 @@ function catchLogs(data) {
       const logZ = data.line[19]
       const radius = data.line[20] 
 
-      const currHPPer = maxHP/currHP * 100
+      const currHPPer = (maxHP/currHP)
 
       console.log (`${type} : ${name} (${npcNameID}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
     }
