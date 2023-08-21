@@ -1,0 +1,752 @@
+territoryData = [
+  {
+    "134": {
+      "placeName": {
+        "ko": "중부 라노시아",
+        "en": "Middle La Noscea",
+        "ja": "中央ラノシア",
+        "cn": "中拉诺西亚",
+        "fr": "Noscea centrale",
+        "de": "Zentrales La Noscea"
+      },
+      "map": "s1f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 16
+    },
+    "135": {
+      "placeName": {
+        "ko": "저지 라노시아",
+        "en": "Lower La Noscea",
+        "ja": "低地ラノシア",
+        "cn": "拉诺西亚低地",
+        "fr": "Basse-Noscea",
+        "de": "Unteres La Noscea"
+      },
+      "map": "s1f2",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 16
+    },
+    "137": {
+      "placeName": {
+        "ko": "동부 라노시아",
+        "en": "Eastern La Noscea",
+        "ja": "東ラノシア",
+        "cn": "东拉诺西亚",
+        "fr": "Noscea orientale",
+        "de": "Östliches La Noscea"
+      },
+      "map": "s1f3",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 18
+    },
+    "138": {
+      "placeName": {
+        "ko": "서부 라노시아",
+        "en": "Western La Noscea",
+        "ja": "西ラノシア",
+        "cn": "西拉诺西亚",
+        "fr": "Noscea occidentale",
+        "de": "Westliches La Noscea"
+      },
+      "map": "s1f4",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 19
+    },
+    "139": {
+      "placeName": {
+        "ko": "고지 라노시아",
+        "en": "Upper La Noscea",
+        "ja": "高地ラノシア",
+        "cn": "拉诺西亚高地",
+        "fr": "Haute-Noscea",
+        "de": "Oberes La Noscea"
+      },
+      "map": "s1f5",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 20
+    },
+    "180": {
+      "placeName": {
+        "ko": "외지 라노시아",
+        "en": "Outer La Noscea",
+        "ja": "外地ラノシア",
+        "cn": "拉诺西亚外地",
+        "fr": "Noscea extérieure",
+        "de": "Äußeres La Noscea"
+      },
+      "map": "s1f6",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 24
+    },
+    "148": {
+      "placeName": {
+        "ko": "검은장막 숲 중부삼림",
+        "en": "Central Shroud",
+        "ja": "黒衣森：中央森林",
+        "cn": "黑衣森林中央林区",
+        "fr": "Forêt centrale",
+        "de": "Tiefer Wald"
+      },
+      "map": "f1f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 3
+    },
+    "152": {
+      "placeName": {
+        "ko": "검은장막 숲 동부삼림",
+        "en": "East Shroud",
+        "ja": "黒衣森：東部森林",
+        "cn": "黑衣森林东部林区",
+        "fr": "Forêt de l'est",
+        "de": "Ostwald"
+      },
+      "map": "f1f2",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 4
+    },
+    "153": {
+      "placeName": {
+        "ko": "검은장막 숲 남부삼림",
+        "en": "South Shroud",
+        "ja": "黒衣森：南部森林",
+        "cn": "黑衣森林南部林区",
+        "fr": "Forêt du sud",
+        "de": "Südwald"
+      },
+      "map": "f1f3",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 5
+    },
+    "154": {
+      "placeName": {
+        "ko": "검은장막 숲 북부삼림",
+        "en": "North Shroud",
+        "ja": "黒衣森：北部森林",
+        "cn": "黑衣森林北部林区",
+        "fr": "Forêt du nord",
+        "de": "Nordwald"
+      },
+      "map": "f1f4",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 6
+    },
+    "140": {
+      "placeName": {
+        "ko": "서부 다날란",
+        "en": "Western Thanalan",
+        "ja": "西ザナラーン",
+        "cn": "西萨纳兰",
+        "fr": "Thanalan occidental",
+        "de": "Westliches Thanalan"
+      },
+      "map": "w1f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 9
+    },
+    "141": {
+      "placeName": {
+        "ko": "중부 다날란",
+        "en": "Central Thanalan",
+        "ja": "中央ザナラーン",
+        "cn": "中萨纳兰",
+        "fr": "Thanalan central",
+        "de": "Zentrales Thanalan"
+      },
+      "map": "w1f2",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 10
+    },
+    "145": {
+      "placeName": {
+        "ko": "동부 다날란",
+        "en": "Eastern Thanalan",
+        "ja": "東ザナラーン",
+        "cn": "东萨纳兰",
+        "fr": "Thanalan oriental",
+        "de": "Östliches Thanalan"
+      },
+      "map": "w1f3",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 11
+    },
+    "146": {
+      "placeName": {
+        "ko": "남부 다날란",
+        "en": "Southern Thanalan",
+        "ja": "南ザナラーン", 
+        "cn": "南萨纳兰",
+        "fr": "Thanalan méridional",
+        "de": "Südliches Thanalan"
+      },
+      "map": "w1f4",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 12
+    },
+    "147": {
+      "placeName": {
+        "ko": "북부 다날란",
+        "en": "Northern Thanalan",
+        "ja": "北ザナラーン",
+        "cn": "北萨纳兰",
+        "fr": "Thanalan septentrional",
+        "de": "Nördliches Thanalan"
+      },
+      "map": "w1f5",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 13
+    },
+    "156": {
+      "placeName": {
+        "ko": "모르도나",
+        "en": "Mor Dhona",
+        "ja": "モードゥナ",
+        "cn": "摩杜纳",
+        "fr": "Mor Dhona",
+        "de": "Mor Dhona"
+      },
+      "map": "l1f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 22
+    },
+    "155": {
+      "placeName": {
+        "ko": "커르다스 중앙고지",
+        "en": "Coerthas Central Highlands",
+        "ja": "クルザス中央高地",
+        "cn": "库尔札斯中央高地",
+        "fr": "Hautes terres du Coerthas central",
+        "de": "Zentrales Hochland von Coerthas"
+      },
+      "map": "r1f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 21
+    },
+    "397": {
+      "placeName": {
+        "ko": "커르다스 서부고지",
+        "en": "Coerthas Western Highlands",
+        "ja": "高地ドラヴァニア",
+        "cn": "龙堡参天高地",
+        "fr": "Avant-pays dravanien",
+        "de": "Dravanisches Vorland"
+      },
+      "map": "r2f1",
+      "sizeFactor": 95,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 49
+    },
+    "398": {
+      "placeName": {
+        "ko": "고지 드라바니아",
+        "en": "The Dravanian Forelands",
+        "ja": "高地ドラヴァニア",
+        "cn": "龙堡参天高地",
+        "fr": "Avant-pays dravanien",
+        "de": "Dravanisches Vorland"
+      },
+      "map": "d2f1",
+      "sizeFactor": 95,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 50
+    },
+    "399": {
+      "placeName": {
+        "ko": "저지 드라바니아",
+        "en": "The Dravanian Hinterlands",
+        "ja": "低地ドラヴァニア",
+        "cn": "龙堡内陆低地",
+        "fr": "Arrière-pays dravanien",
+        "de": "Dravanisches Hinterland"
+      },
+      "map": "d2f2",
+      "sizeFactor": 95,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 51
+    },
+    "400": {
+      "placeName": {
+        "ko": "드라바니아 구름바다",
+        "en": "The Churning Mists",
+        "ja": "ドラヴァニア雲海",
+        "cn": "翻云雾海",
+        "fr": "L'Écume des cieux de Dravania",
+        "de": "Wallende Nebel"
+      },
+      "map": "d2f3",
+      "sizeFactor": 95,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 52
+    },
+    "401": {
+      "placeName": {
+        "ko": "아발라시아 구름바다",
+        "en": "The Sea of Clouds",
+        "ja": "アバラシア雲海",
+        "cn": "阿巴拉提亚云海",
+        "fr": "L'Écume des cieux d'Abalathia",
+        "de": "Abalathisches Wolkenmeer"
+      },
+      "map": "a2f1",
+      "sizeFactor": 95,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 53
+    },
+    "402": {
+      "placeName": {
+        "ko": "아지스 라",
+        "en": "Azys Lla",
+        "ja": "アジス・ラー",
+        "cn": "魔大陆阿济兹拉",
+        "fr": "Azys Lla",
+        "de": "Azys Lla"
+      },
+      "map": "a2f2",
+      "sizeFactor": 95,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 54
+    },
+    "612": {
+      "placeName": {
+        "ko": "기라바니아 변방지대",
+        "en": "The Fringes",
+        "ja": "ギラバニア辺境地帯",
+        "cn": "基拉巴尼亚边区",
+        "fr": "Les Marges",
+        "de": "Abanisches Grenzland"
+      },
+      "map": "g3f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 79
+    },
+    "620": {
+      "placeName": {
+        "ko": "기라바니아 산악지대",
+        "en": "The Peaks",
+        "ja": "ギラバニア山岳地帯",
+        "cn": "基拉巴尼亚山区",
+        "fr": "Les Pics",
+        "de": "Die Zinnen"
+      },
+      "map": "g3f2",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 80
+    },
+    "621": {
+      "placeName": {
+        "ko": "기라바니아 호반지대",
+        "en": "The Lochs",
+        "ja": "ギラバニア湖畔地帯",
+        "cn": "基拉巴尼亚湖区",
+        "fr": "Les Lacs",
+        "de": "Das Fenn"
+      },
+      "map": "g3f3",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 81
+    },
+    "613": {
+      "placeName": {
+        "ko": "홍옥해",
+        "en": "The Ruby Sea",
+        "ja": "紅玉海",
+        "cn": "红玉海",
+        "fr": "Mer de Rubis",
+        "de": "Rubinsee"
+      },
+      "map": "e3f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 83
+    },
+    "614": {
+      "placeName": {
+      "ko": "얀샤",
+      "en": "Yanxia",
+      "ja": "ヤンサ",
+      "cn": "延夏",
+      "fr": "Yanxia",
+      "de": "Yanxia"
+    },
+    "map": "e3f2",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 84
+  },
+  "622": {
+    "placeName": {
+      "ko": "아짐 대초원",
+      "en": "The Azim Steppe",
+      "ja": "アジムステップ",
+      "cn": "太阳神草原",
+      "fr": "Steppe d'Azim",
+      "de": "Azim-Steppe"
+    },
+    "map": "e3f3",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 85
+  },
+  "813": {
+    "placeName": {
+      "ko": "레이크랜드",
+      "en": "Lakeland",
+      "ja": "レイクランド",
+      "cn": "雷克兰德",
+      "fr": "Grand-Lac",
+      "de": "Seenland"
+    },
+    "map": "n4f1",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 106
+  },
+  "814": {
+    "placeName": {
+      "ko": "콜루시아 섬",
+      "en": "Kholusia",
+      "ja": "コルシア島",
+      "cn": "珂露西亚岛",
+      "fr": "Kholusia",
+      "de": "Kholusia"
+    },
+    "map": "n4f2",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 107
+  },
+  "815": {
+    "placeName": {
+      "ko": "아므 아랭",
+      "en": "Amh Araeng",
+      "ja": "アム・アレーン",
+      "cn": "安穆·艾兰",
+      "fr": "Amh Araeng",
+      "de": "Amh Araeng"
+    },
+    "map": "n4f3",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 108
+  },
+  "816": {
+    "placeName": {
+      "ko": "일 메그",
+      "en": "Il Mheg",
+      "ja": "イル・メグ",
+      "cn": "伊尔美格",
+      "fr": "Il Mheg",
+      "de": "Il Mheg"
+    },
+    "map": "n4f4",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 109
+  },
+  "817": {
+    "placeName": {
+      "ko": "라케티카 대삼림",
+      "en": "The Rak'tika Greatwood",
+      "ja": "ラケティカ大森林",
+      "cn": "拉凯提卡大森林",
+      "fr": "Rak'tika",
+      "de": "Der Große Wald Rak'tika"
+    },
+    "map": "n4f5",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 110
+  },
+  "818": {
+    "placeName": {
+      "ko": "템페스트",
+      "en": "The Tempest",
+      "ja": "テンペスト",
+      "cn": "黑风海",
+      "fr": "La Tempête",
+      "de": "Tempest"
+    },
+    "map": "n4f6",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 111
+  },
+  "956": {
+    "placeName": {
+      "ko": "라비린토스",
+      "en": "Labyrinthos",
+      "ja": "ラヴィリンソス",
+      "cn": "迷津",
+      "fr": "Le Labyrinthos",
+      "de": "Labyrinthos"
+    },
+    "map": "k5f1",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 131
+  },
+  "957": {
+    "placeName": {
+      "ko": "사베네어 섬",
+      "en": "Thavnair",
+      "ja": "サベネア島",
+      "cn": "萨维奈岛",
+      "fr": "Thavnair",
+      "de": "Thavnair"
+    },
+    "map": "m5f1",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 132
+  },
+  "958": {
+    "placeName": {
+      "ko": "갈레말드",
+      "en": "Garlemald",
+      "ja": "ガレマルド",
+      "cn": "加雷马",
+      "fr": "Garlemald",
+      "de": "Garlemald"
+    },
+    "map": "m5f2",
+    "sizeFactor": 100,
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "weatherRate": 133
+  },
+    "961": {
+      "placeName": {
+        "ko": "엘피스",
+        "en": "Elpis",
+        "ja": "エルピス",
+        "cn": "厄尔庇斯",
+        "fr": "Elpis",
+        "de": "Elpis"
+      },
+      "map": "n5f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 134
+    },
+    "959": {
+      "placeName": {
+        "ko": "비탄의 바다",
+        "en": "Mare Lamentorum",
+        "ja": "嘆きの海",
+        "cn": "叹息海",
+        "fr": "Mare Lamentorum",
+        "de": "Mare Lamentorum"
+      },
+      "map": "u5f1",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 135
+    },
+    "960": {
+      "placeName": {
+        "ko": "울티마 툴레",
+        "en": "Ultima Thule",
+        "ja": "ウルティマ・トゥーレ",
+        "cn": "天外天垓",
+        "fr": "Ultima Thulé",
+        "de": "Ultima Thule"
+      },
+      "map": "u5f2",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 136
+    },
+    "황금1": {
+      "placeName": {
+        "ko": "우르코파차",
+        "en": "Urqopacha",
+        "ja": "",
+        "cn": "",
+        "fr": "",
+        "de": ""
+      },
+      "map": "",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 100
+    },
+    "황금2": {
+      "placeName": {
+        "ko": "야크 텔",
+        "en": "Yak T'el",
+        "ja": "",
+        "cn": "",
+        "fr": "",
+        "de": ""
+      },
+      "map": "",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 100
+      },
+      "황금3": {
+        "placeName": {
+          "ko": "",
+          "en": ""
+        },
+        "map": "",
+        "sizeFactor": 100,
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "weatherRate": 0
+        },
+    "황금4": {
+      "placeName": {
+        "ko": "",
+        "en": "",
+        "ja": "",
+        "cn": "",
+        "fr": "",
+        "de": ""
+      },
+      "map": "",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 0
+      },
+      "황금5": {
+        "placeName": {
+          "ko": "",
+          "en": "",
+          "ja": "",
+          "cn": "",
+          "fr": "",
+          "de": ""
+        },
+        "map": "",
+        "sizeFactor": 100,
+        "offsetX": 0,
+        "offsetY": 0,
+        "offsetZ": 0,
+        "weatherRate": 0
+        },
+    "황금6": {
+      "placeName": {
+        "ko": "",
+        "en": "",
+        "ja": "",
+        "cn": "",
+        "fr": "",
+        "de": ""
+      },
+      "map": "",
+      "sizeFactor": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "weatherRate": 0
+      }
+    }
+]

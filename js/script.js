@@ -1,8 +1,17 @@
 const terrInfo = document.getElementById("terrInfo")
 const userData = document.getElementById("userData")
 const worldInfo = document.getElementById("worldInfo")
+const huntData = require('./Hunt.json')
+const terrData = require('./Territory.json')
+console.log (userData)
+console.log (worldInfo)
+console.log (huntData)
+console.log (terrData)
 
-function catchLogs(data) {
+let mydata = JSON.parse(JSON.stringify(data));
+console.log(mydata);
+
+function catchLogs (data) {
   const logLine = data.line
 
   switch (logLine[0]) {
@@ -60,9 +69,9 @@ function catchLogs(data) {
       const currWorldID = logLine[logLine.indexOf('CurrentWorldID') + 1]
       const name = logLine[logLine.indexOf('Name') + 1]
       const bnpcNameID = logLine[logLine.indexOf('BnpcNameID') + 1]
-      const worldName = server (currWorldID)
+      const worldName = serverNameIndex (currWorldID)
 
-      if (status === 'Add' && name === '백측' && id === '10135A95') {
+      if (status === 'Add' && name == '백측' && id == '10135A95') {
         userData.textContent = `${name} (${id})`
         worldInfo.textContent = `${worldName}`
       } else {return}
