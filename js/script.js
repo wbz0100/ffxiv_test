@@ -1,5 +1,5 @@
 const terrInfo = document.getElementById("terrInfo")
-const userdata = document.getElementById("userdata")
+const userData = document.getElementById("userData")
 
 function catchLogs(data) {
 
@@ -9,7 +9,7 @@ function catchLogs(data) {
       const terrID = data.line[2]
       const terrName = data.line[3]
 
-      terrInfo.innerText = `${terrName} (${terrID})`
+      terrInfo.innerHTML = `${terrName} (${terrID})`
 
       console.log (`${type} : ${terrName} (${terrID})`)
     }
@@ -19,7 +19,7 @@ function catchLogs(data) {
       const id = data.line[2]
       const name = data.line[3]
 
-      userdata.innerText = `${name} (${id})`
+      userData.innerHTML = `${name} (${id})`
 
       console.log (`${type} : ${name} (${id})`)
     }
