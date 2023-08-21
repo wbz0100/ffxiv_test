@@ -76,7 +76,7 @@ function catchLogs (data) {
 
 }
 
-function server (worldID) {
+function serverNameIndex (worldID) {
   if (worldID === '2075') {
     serverName = '카벙클'
   }
