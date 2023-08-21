@@ -58,7 +58,7 @@ function catchLogs(data) {
       const status = logLine[2]
       const id = logLine[3]
       const currWorldID = logLine[logLine.indexOf('CurrentWorldID') + 1]
-      const name = logLine[logLine.consoleindexOf('Name') + 1]
+      const name = logLine[logLine.indexOf('Name') + 1]
       const bnpcNameID = logLine[logLine.indexOf('BnpcNameID') + 1]
 
       if (status === 'Add' && name === '백측' && id === '10135A95') {
