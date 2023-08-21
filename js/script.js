@@ -18,8 +18,8 @@ function catchLogs(data) {
 
         console.log (`${type} : ${name} (${id})`)
       }
-      default:
-        return
+      break
+      default: return
     }
   }catch (error)
   console.log (error)
