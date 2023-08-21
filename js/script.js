@@ -5,9 +5,6 @@ const worldInfo = document.getElementById("worldInfo")
 console.log (userData)
 console.log (worldInfo)
 
-let mydata = JSON.parse(JSON.stringify(data));
-console.log(mydata);
-
 function catchLogs (data) {
   const logLine = data.line
 
