@@ -21,14 +21,3 @@ body > div {
   display: flex;
   font-size: 12px;
 }
-.version_info > div {
-  margin:  0 2px 0 2px;
-}
-.version_info > div:first-child {
-  margin-left: 0px !important;
-}
-
-.version_info > div:last-child {
-  margin-right: 0px !important;
-}
-

@@ -1,5 +1,6 @@
 const terrInfo = document.getElementById("terrInfo")
 const userData = document.getElementById("userData")
+const worldInfo = document.getElementById("worldInfo")
 
 function catchLogs(data) {
 
@@ -33,11 +34,7 @@ function catchLogs(data) {
       const logX = data.line[17]
       const logY = data.line[18]
       const logZ = data.line[19]
-      const radius = data.line[20] 
-
-      const currHPPer = Math.floor((currHP/maxHP) * 10000) / 100
-
-      console.log (`${type} : ${name} (${npcNameID}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
+      const radius = data.line[20]
     }
     break
     case '04': {
@@ -50,11 +47,21 @@ function catchLogs(data) {
       const logX = data.line[17]
       const logY = data.line[18]
       const logZ = data.line[19]
-      const radius = data.line[20] 
+      const radius = data.line[20]
+    }
+    break
+    case '261': {
+      const type = "메모리 객체 값"
+      const status = data.line[2]
+      const id = data.line[3]
+      const currWorldID = data[data.indexOf('CurrentWorldID') + 1]
+      const name = data[data.indexOf('Name') + 1]
+      const bnpcNameID = data[data.indexOf('BnpcNameID') + 1]
 
-      const currHPPer = Math.floor((currHP/maxHP) * 10000) / 100
-
-      console.log (`${type} : ${name} (${npcNameID}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
+      if (status === 'Add' && name === '백측' && id === '10135A95') {
+        userData.innerHTML = `${name} (${id})`
+        worldInfo.innerHTML = `[${currWorldID}]`
+      }
     }
     break
     default: return
