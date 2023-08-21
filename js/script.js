@@ -2,6 +2,7 @@ const terrInfo = document.getElementById("terrInfo")
 const userData = document.getElementById("userData")
 const worldInfo = document.getElementById("worldInfo")
 
+let currWorld = worldInfo.textContent
 let currUser = '--'
 let currUserID = '--'
 
@@ -81,22 +82,27 @@ function catchLogs (data) {
 }
 
 function serverNameIndex (worldID) {
-  if (worldID === '2075') {
-    serverName = '카벙클'
+  try {
+    if (worldID === '2075') {
+      serverName = '카벙클'
+    }
+    else if (worldID === '2076') {
+      serverName = '초코보'
+    }
+    else if (worldID === '2077') {
+      serverName = '모그리'
+    }
+    else if (worldID === '2078') {
+      serverName = '톤베리'
+    }
+    else if (worldID === '2080') {
+      serverName = '펜리르'
+    }
+    return serverName
+  } catch (error) {
+    serverName = 'Unknown'
+    return serverName
   }
-  else if (worldID === '2076') {
-    serverName = '초코보'
-  }
-  else if (worldID === '2077') {
-    serverName = '모그리'
-  }
-  else if (worldID === '2078') {
-    serverName = '톤베리'
-  }
-  else if (worldID === '2080') {
-    serverName = '펜리르'
-  }
-  return serverName
 }
 
 addOverlayListener('LogLine', catchLogs); // 등록
