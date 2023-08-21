@@ -35,6 +35,7 @@ function catchLogs(data) {
       const logY = data.line[18]
       const logZ = data.line[19]
       const radius = data.line[20]
+      return
     }
     break
     case '04': {
@@ -48,6 +49,7 @@ function catchLogs(data) {
       const logY = data.line[18]
       const logZ = data.line[19]
       const radius = data.line[20]
+      return
     }
     break
     case '261': {
@@ -61,7 +63,7 @@ function catchLogs(data) {
       if (status === 'Add' && name === '백측' && id === '10135A95') {
         userData.innerHTML = `${name} (${id})`
         worldInfo.innerHTML = `[${currWorldID}]`
-      }
+      } else {return}
     }
     break
     default: return
