@@ -1,8 +1,6 @@
 const userName = document.getElementById("username")
-const userID = document.getElementById("username")
-
-
-
+const userID = document.getElementById("userID")
+const terrInfo = document.getElementById("terrInfo")
 
 function catchLogs(data) {
 
@@ -11,6 +9,8 @@ function catchLogs(data) {
       const type = "지역 변경"
       const terrID = data.line[3]
       const terrName = data.line[4]
+
+      terrInfo.innerText = `${terrName} (${terrID})`
 
       console.log (`${type} : ${terrName} (${terrID})`)
     }
@@ -22,7 +22,7 @@ function catchLogs(data) {
 
       userName.innerText = name
       userID.innerText = id
-      
+
       console.log (`${type} : ${name} (${id})`)
     }
     case '03': {
