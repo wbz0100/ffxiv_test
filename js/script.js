@@ -1,12 +1,9 @@
 const terrInfo = document.getElementById("terrInfo")
 const userData = document.getElementById("userData")
 const worldInfo = document.getElementById("worldInfo")
-const huntData = require('./Hunt.json')
-const terrData = require('./Territory.json')
+
 console.log (userData)
 console.log (worldInfo)
-console.log (huntData)
-console.log (terrData)
 
 let mydata = JSON.parse(JSON.stringify(data));
 console.log(mydata);
