@@ -7,8 +7,8 @@ function catchLogs(data) {
   switch (data.line[0]) {
     case '01': {
       const type = "지역 변경"
-      const terrID = data.line[3]
-      const terrName = data.line[4]
+      const terrID = data.line[2]
+      const terrName = data.line[3]
 
       terrInfo.innerText = `${terrName} (${terrID})`
 
