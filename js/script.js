@@ -1,3 +1,9 @@
+const userName = document.getElementById("username")
+const userID = document.getElementById("username")
+
+
+
+
 function catchLogs(data) {
 
   switch (data.line[0]) {
@@ -14,6 +20,9 @@ function catchLogs(data) {
       const id = data.line[2]
       const name = data.line[3]
 
+      userName.innerText = name
+      userID.innerText = id
+      
       console.log (`${type} : ${name} (${id})`)
     }
     case '03': {
@@ -28,7 +37,7 @@ function catchLogs(data) {
       const logZ = data.line[19]
       const radius = data.line[20] 
 
-      const currHPPer = Math.floor((currHP/maxHP) * 100 *100) / 100
+      const currHPPer = Math.floor((currHP/maxHP) * 10000) / 100
 
       console.log (`${type} : ${name} (${npcNameID}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
     }
@@ -45,7 +54,7 @@ function catchLogs(data) {
       const logZ = data.line[19]
       const radius = data.line[20] 
 
-      const currHPPer = Math.floor((currHP/maxHP) * 100 *100) / 100
+      const currHPPer = Math.floor((currHP/maxHP) * 10000) / 100
 
       console.log (`${type} : ${name} (${npcNameID}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
     }
