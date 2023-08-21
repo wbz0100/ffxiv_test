@@ -11,7 +11,7 @@ function catchLogs (data) {
   switch (logLine[0]) {
     case '01': {
       const type = "지역 변경"
-      const terrID = logLine[2]
+      const terrID = parseInt(logLine[2], 16)
       const terrName = logLine[3]
 
       terrInfo.textContent = `${terrName} (${terrID})`
