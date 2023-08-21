@@ -18,7 +18,7 @@ function catchLogs(data) {
     }
     case '03': {
       const type = "새 객체 정보"
-      const id = data.line[2]
+      const id = data.line[2] 
       const name = data.line[3]
       const npcNameID = data.line[9]
       const currHP = data.line[11]
@@ -28,9 +28,9 @@ function catchLogs(data) {
       const logZ = data.line[19]
       const radius = data.line[20] 
 
-      const currHPPer = (maxHP/currHP)
+      const currHPPer = Math.floor((maxHP/currHP) * 100 *100) / 100
 
-      console.log (`${type} : ${name} (${id}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
+      console.log (`${type} : ${name} (${npcNameID}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
     }
     break
     case '04': {
@@ -45,7 +45,7 @@ function catchLogs(data) {
       const logZ = data.line[19]
       const radius = data.line[20] 
 
-      const currHPPer = (maxHP/currHP)
+      const currHPPer = Math.floor((maxHP/currHP) *100) / 100
 
       console.log (`${type} : ${name} (${npcNameID}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
     }
