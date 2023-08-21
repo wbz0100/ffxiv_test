@@ -47,7 +47,7 @@ function catchLogs(data) {
 
       const currHPPer = maxHP/currHP * 100
 
-      console.log (`${type} : ${name} (${id}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
+      console.log (`${type} : ${name} (${npcNameID}) HP: ${currHP}/${maxHP} (${currHPPer}%)`)
     }
     break
     default: return
