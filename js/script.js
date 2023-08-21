@@ -3,7 +3,7 @@ function catchLogs(data) {
 
   try {
     switch (data.line[0]) {
-      "01": {
+      case "01": {
         const type = "지역 변경"
         const terrID = data.line[3]
         const terrName = data.line[4]
