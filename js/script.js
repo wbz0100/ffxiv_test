@@ -2,6 +2,9 @@ const terrInfo = document.getElementById("terrInfo")
 const userData = document.getElementById("userData")
 const worldInfo = document.getElementById("worldInfo")
 
+let currUser = '--'
+let currUserID = '--'
+
 console.log (userData)
 console.log (worldInfo)
 
@@ -27,6 +30,7 @@ function catchLogs (data) {
       userData.textContent = `${name} (${id})`
 
       console.log (`${type} : ${name} (${id})`)
+      return currUser = name, currUserID = id
     }
     case '03': {
       const type = "새 객체 정보"
@@ -65,7 +69,7 @@ function catchLogs (data) {
       const bnpcNameID = logLine[logLine.indexOf('BnpcNameID') + 1]
       const worldName = serverNameIndex (currWorldID)
 
-      if (status === 'Add' && name == '백측' && id == '10135A95') {
+      if (status === 'Add' && name == currUser && id == currUserID) {
         userData.textContent = `${name} (${id})`
         worldInfo.textContent = `${worldName}`
       } else {return}
