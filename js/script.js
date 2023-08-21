@@ -11,7 +11,7 @@ function catchLogs(data) {
       const terrID = logLine[2]
       const terrName = logLine[3]
 
-      terrInfo.innerText = `${terrName} (${terrID})`
+      terrInfo.textContent = `${terrName} (${terrID})`
 
       console.log (`${type} : ${terrName} (${terrID})`)
     }
@@ -21,7 +21,7 @@ function catchLogs(data) {
       const id = logLine[2]
       const name = logLine[3]
 
-      userData.innerText = `${name} (${id})`
+      userData.textContent = `${name} (${id})`
 
       console.log (`${type} : ${name} (${id})`)
     }
@@ -63,8 +63,8 @@ function catchLogs(data) {
       const worldName = server (currWorldID)
 
       if (status === 'Add' && name === '백측' && id === '10135A95') {
-        userData.innerText = `${name} (${id})`
-        worldInfo.innerText = `[${worldName}]`
+        userData.textContent = `${name} (${id})`
+        worldInfo.textContent = `${worldName}`
       } else {return}
     }
     break
@@ -75,20 +75,21 @@ function catchLogs(data) {
 
 function server (worldID) {
   if (worldID === '2075') {
-    return '카벙클'
+    serverName = '카벙클'
   }
   else if (worldID === '2076') {
-    return '초코보'
+    serverName = '초코보'
   }
   else if (worldID === '2077') {
-    return '모그리'
+    serverName = '모그리'
   }
   else if (worldID === '2078') {
-    return '톤베리'
+    serverName = '톤베리'
   }
   else if (worldID === '2080') {
-    return '펜리르'
+    serverName = '펜리르'
   }
+  return serverName
 }
 
 addOverlayListener('LogLine', catchLogs); // 등록
