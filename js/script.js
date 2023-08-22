@@ -2,6 +2,9 @@ const terrInfo = document.getElementById("terrInfo")
 const userData = document.getElementById("userData")
 const worldInfo = document.getElementById("worldInfo")
 
+const TerritoryDATA = JSON.parse(JSON.stringify(TerritoryData))
+const huntDATA = JSON.parse(JSON.stringify(Hunt))
+
 let currWorld = worldInfo.textContent
 let currUser = '--'
 let currUserID = '--'
@@ -12,12 +15,14 @@ function catchLogs (data) {
   switch (logLine[0]) {
     case '01': {
       const type = "지역 변경"
-      const terrID = parseInt(logLine[2], 16)
-      const terrName = logLine[3]
+      const territoryID = parseInt(logLine[2], 16)
+      const territoryName = logLine[3]
 
-      terrInfo.textContent = `${terrName} (${terrID})`
+      const terrData = terrdataload (territoryID)
 
-      console.log (`${type} : ${terrName} (${terrID})`)
+      terrInfo.textContent = `${terrData[1]} (${territoryID} Offset(X:${terrData[3]} Y:${terrData[4]} Z:${terrData[5]}) Map:${terrData[6]} WeatherRate:${terrData[7]} )`
+
+      console.log (`${type} : ${territoryName} (${territoryID})`)
     }
     break
     case '02': {
@@ -100,6 +105,19 @@ function serverNameIndex (worldID) {
     serverName = 'Unknown'
     return serverName
   }
+}
+
+function terrdataload (terrid) {
+const terrName = TerritoryDATA[0][terrid]["placeName"]["ko"]
+const terrSize = TerritoryDATA[0][terrid]["sizeFactor"]
+const terrOffsetX = TerritoryDATA[0][terrid]["offsetX"]
+const terrOffsetY = TerritoryDATA[0][terrid]["offsetY"]
+const terrOffsetZ = TerritoryDATA[0][terrid]["offsetZ"]
+const trrMap = TerritoryDATA[0][terrid]["map"]
+const weaRate = TerritoryDATA[0][terrid]["weatherRate"]
+  
+const territoryData =   [terrName,terrSize,terrOffsetX,terrOffsetY,terrOffsetZ,trrMap,weaRate]
+return territoryData
 }
 
 addOverlayListener('LogLine', catchLogs); // 등록
