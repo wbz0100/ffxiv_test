@@ -1,3 +1,5 @@
+console.log (territoryData)
+
 function reportLogs () {
   let splitLog = log.split ('|')
   let date = Utilities.formatDate(new Date(splitLog[1]), "GMT+9" , "YYYY-MM-dd HH:mm:ss.SSS")
@@ -76,10 +78,10 @@ function reportLogs () {
       break
       default : "Error"
       break
-    } catch(error) {
-      console.log(error)
-      throw error
     }
+  } catch(error) {
+    console.log(error)
+    throw error
   }
 }
 

@@ -2,9 +2,6 @@ const terrInfo = document.getElementById("terrInfo")
 const userData = document.getElementById("userData")
 const worldInfo = document.getElementById("worldInfo")
 
-const TerritoryDATA = JSON.parse(JSON.stringify(TerritoryData))
-const huntDATA = JSON.parse(JSON.stringify(HuntData))
-
 let currWorld = worldInfo.textContent
 let currUser = '--'
 let currUserID = '--'
