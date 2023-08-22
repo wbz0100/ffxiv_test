@@ -1,5 +1,5 @@
 TerritoryData = [
-    134:{
+    '134':{
       "placeName":{
         "ko":"중부 라노시아",
         "en":"Middle La Noscea",
@@ -15,7 +15,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":16
     },
-    135:{
+    '135':{
       "placeName":{
         "ko":"저지 라노시아",
         "en":"Lower La Noscea",
@@ -31,7 +31,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":16
     },
-    137:{
+    '137':{
       "placeName":{
         "ko":"동부 라노시아",
         "en":"Eastern La Noscea",
