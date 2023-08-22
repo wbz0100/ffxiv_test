@@ -1,6 +1,5 @@
 TerritoryData = [
-  {
-    "134":{
+    134:{
       "placeName":{
         "ko":"중부 라노시아",
         "en":"Middle La Noscea",
@@ -16,7 +15,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":16
     },
-    "135":{
+    135:{
       "placeName":{
         "ko":"저지 라노시아",
         "en":"Lower La Noscea",
@@ -32,7 +31,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":16
     },
-    "137":{
+    137:{
       "placeName":{
         "ko":"동부 라노시아",
         "en":"Eastern La Noscea",
@@ -48,7 +47,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":18
     },
-    "138":{
+    138:{
       "placeName":{
         "ko":"서부 라노시아",
         "en":"Western La Noscea",
@@ -64,7 +63,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":19
     },
-    "139":{
+    139:{
       "placeName":{
         "ko":"고지 라노시아",
         "en":"Upper La Noscea",
@@ -80,7 +79,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":20
     },
-    "180":{
+    180:{
       "placeName":{
         "ko":"외지 라노시아",
         "en":"Outer La Noscea",
@@ -96,7 +95,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":24
     },
-    "148":{
+    148:{
       "placeName":{
         "ko":"검은장막 숲 중부삼림",
         "en":"Central Shroud",
@@ -112,7 +111,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":3
     },
-    "152":{
+    152:{
       "placeName":{
         "ko":"검은장막 숲 동부삼림",
         "en":"East Shroud",
@@ -128,7 +127,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":4
     },
-    "153":{
+    153:{
       "placeName":{
         "ko":"검은장막 숲 남부삼림",
         "en":"South Shroud",
@@ -144,7 +143,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":5
     },
-    "154":{
+    154:{
       "placeName":{
         "ko":"검은장막 숲 북부삼림",
         "en":"North Shroud",
@@ -160,7 +159,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":6
     },
-    "140":{
+    140:{
       "placeName":{
         "ko":"서부 다날란",
         "en":"Western Thanalan",
@@ -176,7 +175,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":9
     },
-    "141":{
+    141:{
       "placeName":{
         "ko":"중부 다날란",
         "en":"Central Thanalan",
@@ -192,7 +191,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":10
     },
-    "145":{
+    145:{
       "placeName":{
         "ko":"동부 다날란",
         "en":"Eastern Thanalan",
@@ -208,7 +207,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":11
     },
-    "146":{
+    146:{
       "placeName":{
         "ko":"남부 다날란",
         "en":"Southern Thanalan",
@@ -224,7 +223,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":12
     },
-    "147":{
+    147:{
       "placeName":{
         "ko":"북부 다날란",
         "en":"Northern Thanalan",
@@ -240,7 +239,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":13
     },
-    "156":{
+    156:{
       "placeName":{
         "ko":"모르도나",
         "en":"Mor Dhona",
@@ -256,7 +255,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":22
     },
-    "155":{
+    155:{
       "placeName":{
         "ko":"커르다스 중앙고지",
         "en":"Coerthas Central Highlands",
@@ -272,7 +271,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":21
     },
-    "397":{
+    397:{
       "placeName":{
         "ko":"커르다스 서부고지",
         "en":"Coerthas Western Highlands",
@@ -288,7 +287,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":49
     },
-    "398":{
+    398:{
       "placeName":{
         "ko":"고지 드라바니아",
         "en":"The Dravanian Forelands",
@@ -304,7 +303,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":50
     },
-    "399":{
+    399:{
       "placeName":{
         "ko":"저지 드라바니아",
         "en":"The Dravanian Hinterlands",
@@ -320,7 +319,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":51
     },
-    "400":{
+    400:{
       "placeName":{
         "ko":"드라바니아 구름바다",
         "en":"The Churning Mists",
@@ -336,7 +335,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":52
     },
-    "401":{
+    401:{
       "placeName":{
         "ko":"아발라시아 구름바다",
         "en":"The Sea of Clouds",
@@ -352,7 +351,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":53
     },
-    "402":{
+    402:{
       "placeName":{
         "ko":"아지스 라",
         "en":"Azys Lla",
@@ -368,7 +367,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":54
     },
-    "612":{
+    612:{
       "placeName":{
         "ko":"기라바니아 변방지대",
         "en":"The Fringes",
@@ -384,7 +383,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":79
     },
-    "620":{
+    620:{
       "placeName":{
         "ko":"기라바니아 산악지대",
         "en":"The Peaks",
@@ -400,7 +399,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":80
     },
-    "621":{
+    621:{
       "placeName":{
         "ko":"기라바니아 호반지대",
         "en":"The Lochs",
@@ -416,7 +415,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":81
     },
-    "613":{
+    613:{
       "placeName":{
         "ko":"홍옥해",
         "en":"The Ruby Sea",
@@ -432,7 +431,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":83
     },
-    "961":{
+    961:{
       "placeName":{
         "ko":"엘피스",
         "en":"Elpis",
@@ -448,7 +447,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":134
     },
-    "959":{
+    959:{
       "placeName":{
         "ko":"비탄의 바다",
         "en":"Mare Lamentorum",
@@ -464,7 +463,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":135
     },
-    "960":{
+    960:{
       "placeName":{
         "ko":"울티마 툴레",
         "en":"Ultima Thule",
@@ -480,7 +479,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":136
     },
-    "1001":{
+    1001:{
       "placeName":{
         "ko":"우르코파차",
         "en":"Urqopacha"
@@ -492,7 +491,7 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":100
     },
-    "1002":{
+    1002:{
       "placeName":{
         "ko":"야크 텔",
         "en":"Yak T'el"
@@ -504,5 +503,4 @@ TerritoryData = [
       "offsetZ":0,
       "weatherRate":100
     }
-  }
 ]
