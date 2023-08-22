@@ -3,7 +3,7 @@ const userData = document.getElementById("userData")
 const worldInfo = document.getElementById("worldInfo")
 
 const TerritoryDATA = JSON.parse(JSON.stringify(TerritoryData))
-const huntDATA = JSON.parse(JSON.stringify(Hunt))
+const huntDATA = JSON.parse(JSON.stringify(HuntData))
 
 let currWorld = worldInfo.textContent
 let currUser = '--'
@@ -115,8 +115,8 @@ const terrOffsetY = TerritoryDATA[0][terrid]["offsetY"]
 const terrOffsetZ = TerritoryDATA[0][terrid]["offsetZ"]
 const trrMap = TerritoryDATA[0][terrid]["map"]
 const weaRate = TerritoryDATA[0][terrid]["weatherRate"]
-  
 const territoryData =   [terrName,terrSize,terrOffsetX,terrOffsetY,terrOffsetZ,trrMap,weaRate]
+
 return territoryData
 }
 
