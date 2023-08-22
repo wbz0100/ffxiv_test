@@ -20,7 +20,7 @@ function catchLogs (data) {
 
       const terrData = terrdataload (territoryID)
 
-      terrInfo.textContent = `${terrData[1]} (${territoryID} Offset(X:${terrData[3]} Y:${terrData[4]} Z:${terrData[5]}) Map:${terrData[6]} WeatherRate:${terrData[7]} )`
+      terrInfo.textContent = `${terrData[0]} (${territoryID} Offset(X:${terrData[2]} Y:${terrData[3]} Z:${terrData[4]}) Map:${terrData[5]} WeatherRate:${terrData[6]} )`
 
       console.log (`${type} : ${territoryName} (${territoryID})`)
     }
@@ -117,7 +117,7 @@ function terrdataload (terrid) {
   const terrOffsetZ = TerritoryDATA[0][terrNum]["offsetZ"]
   const trrMap = TerritoryDATA[0][terrNum]["map"]
   const weaRate = TerritoryDATA[0][terrNum]["weatherRate"]
-  const territoryData =   [terrName,terrSize,terrOffsetX,terrOffsetY,terrOffsetZ,trrMap,weaRate]
+  const territoryData = [terrName,terrSize,terrOffsetX,terrOffsetY,terrOffsetZ,trrMap,weaRate]
 
   return territoryData
 }
