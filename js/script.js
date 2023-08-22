@@ -19,10 +19,15 @@ function catchLogs (data) {
       const territoryName = logLine[3]
 
       const terrData = terrdataload (territoryID)
-
+      
+      if (!terrData) {
       terrInfo.textContent = `${terrData[0]} (${territoryID} Offset(X:${terrData[2]} Y:${terrData[3]} Z:${terrData[4]}) Map:${terrData[5]} WeatherRate:${terrData[6]} )`
-
-      console.log (`${type} : ${territoryName} (${territoryID})`)
+      console.log (`${type} : ${terrData[0]} (${territoryID}) - json 파싱 오류 없음`)
+      }
+      else {
+        terrInfo.textContent = `${territoryName} (${territoryID}`
+        console.log (`${type} : ${territoryName} (${territoryID})`)
+      }
     }
     break
     case '02': {
@@ -108,8 +113,8 @@ function serverNameIndex (worldID) {
 }
 
 function terrdataload (terrid) {
-  console.log (Number(terrid))
   let terrNum = Number(terrid)
+  
   const terrName = TerritoryDATA[0][terrNum]["placeName"]["ko"]
   const terrSize = TerritoryDATA[0][terrNum]["sizeFactor"]
   const terrOffsetX = TerritoryDATA[0][terrNum]["offsetX"]
