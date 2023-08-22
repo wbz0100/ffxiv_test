@@ -32,7 +32,7 @@ function catchLogs (data) {
     break
     case '02': {
       const type = "플레이어 정보 갱신"
-      const id = logLine[2]
+      const id = logLine[2  ]
       const name = logLine[3]
 
       userData.textContent = `${name} (${id})`
@@ -114,15 +114,20 @@ function serverNameIndex (worldID) {
 
 function terrdataload (terrid) {
   let terrNum = Number(terrid)
-  
-  const terrName = TerritoryDATA[0][terrNum]["placeName"]["ko"]
-  const terrSize = TerritoryDATA[0][terrNum]["sizeFactor"]
-  const terrOffsetX = TerritoryDATA[0][terrNum]["offsetX"]
-  const terrOffsetY = TerritoryDATA[0][terrNum]["offsetY"]
-  const terrOffsetZ = TerritoryDATA[0][terrNum]["offsetZ"]
-  const trrMap = TerritoryDATA[0][terrNum]["map"]
-  const weaRate = TerritoryDATA[0][terrNum]["weatherRate"]
-  const territoryData = [terrName,terrSize,terrOffsetX,terrOffsetY,terrOffsetZ,trrMap,weaRate]
+  let territoryData = null
+
+  try {
+    const terrName = TerritoryDATA[0][terrNum]["placeName"]["ko"]
+    const terrSize = TerritoryDATA[0][terrNum]["sizeFactor"]
+    const terrOffsetX = TerritoryDATA[0][terrNum]["offsetX"]
+    const terrOffsetY = TerritoryDATA[0][terrNum]["offsetY"]
+    const terrOffsetZ = TerritoryDATA[0][terrNum]["offsetZ"]
+    const trrMap = TerritoryDATA[0][terrNum]["map"]
+    const weaRate = TerritoryDATA[0][terrNum]["weatherRate"]
+    territoryData = [terrName,terrSize,terrOffsetX,terrOffsetY,terrOffsetZ,trrMap,weaRate]
+  } catch (error) {
+    territoryData = null
+  }
 
   return territoryData
 }
