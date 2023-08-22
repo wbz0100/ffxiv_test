@@ -108,16 +108,18 @@ function serverNameIndex (worldID) {
 }
 
 function terrdataload (terrid) {
-const terrName = TerritoryDATA[0][terrid]["placeName"]["ko"]
-const terrSize = TerritoryDATA[0][terrid]["sizeFactor"]
-const terrOffsetX = TerritoryDATA[0][terrid]["offsetX"]
-const terrOffsetY = TerritoryDATA[0][terrid]["offsetY"]
-const terrOffsetZ = TerritoryDATA[0][terrid]["offsetZ"]
-const trrMap = TerritoryDATA[0][terrid]["map"]
-const weaRate = TerritoryDATA[0][terrid]["weatherRate"]
-const territoryData =   [terrName,terrSize,terrOffsetX,terrOffsetY,terrOffsetZ,trrMap,weaRate]
+  console.log (Number(terrid))
+  let terrNum = Number(terrid)
+  const terrName = TerritoryDATA[0][terrNum]["placeName"]["ko"]
+  const terrSize = TerritoryDATA[0][terrNum]["sizeFactor"]
+  const terrOffsetX = TerritoryDATA[0][terrNum]["offsetX"]
+  const terrOffsetY = TerritoryDATA[0][terrNum]["offsetY"]
+  const terrOffsetZ = TerritoryDATA[0][terrNum]["offsetZ"]
+  const trrMap = TerritoryDATA[0][terrNum]["map"]
+  const weaRate = TerritoryDATA[0][terrNum]["weatherRate"]
+  const territoryData =   [terrName,terrSize,terrOffsetX,terrOffsetY,terrOffsetZ,trrMap,weaRate]
 
-return territoryData
+  return territoryData
 }
 
 addOverlayListener('LogLine', catchLogs); // 등록
