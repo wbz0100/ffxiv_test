@@ -6,9 +6,6 @@ let currWorld = worldInfo.textContent
 let currUser = '--'
 let currUserID = '--'
 
-console.log (userData)
-console.log (worldInfo)
-
 function catchLogs (data) {
   const logLine = data.line
 
