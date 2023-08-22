@@ -20,7 +20,7 @@ function catchLogs (data) {
 
       const terrData = terrdataload (territoryID)
       
-      if (!terrData) {
+      if (terrData) {
       terrInfo.textContent = `${terrData[0]} (${territoryID} Offset(X:${terrData[2]} Y:${terrData[3]} Z:${terrData[4]}) Map:${terrData[5]} WeatherRate:${terrData[6]} )`
       console.log (`${type} : ${terrData[0]} (${territoryID}) - json 파싱 오류 없음`)
       }
