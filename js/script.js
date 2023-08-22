@@ -21,18 +21,18 @@ function catchLogs (data) {
       const terrData = terrdataload (territoryID)
       
       if (terrData) {
-      terrInfo.textContent = `${terrData[0]} (${territoryID} Offset(X:${terrData[2]} Y:${terrData[3]} Z:${terrData[4]}) Map:${terrData[5]} WeatherRate:${terrData[6]} )`
+      terrInfo.textContent = `${terrData[0]} (${territoryID} Offset(X:${terrData[2]} Y:${terrData[3]} Z:${terrData[4]}) Map:${terrData[5]} WeatherRate:${terrData[6]})`
       console.log (`${type} : ${terrData[0]} (${territoryID}) - json 파싱 오류 없음`)
       }
       else {
-        terrInfo.textContent = `${territoryName} (${territoryID}`
+        terrInfo.textContent = `${territoryName} (${territoryID})`
         console.log (`${type} : ${territoryName} (${territoryID})`)
       }
     }
     break
     case '02': {
       const type = "플레이어 정보 갱신"
-      const id = logLine[2  ]
+      const id = logLine[2 ]
       const name = logLine[3]
 
       userData.textContent = `${name} (${id})`
