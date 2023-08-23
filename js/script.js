@@ -32,7 +32,7 @@ function catchLogs (data) {
     break
     case '02': {
       const type = "플레이어 정보 갱신"
-      const id = logLine[2 ]
+      const id = logLine[2  ]
       const name = logLine[3]
 
       userData.textContent = `${name} (${id})`
